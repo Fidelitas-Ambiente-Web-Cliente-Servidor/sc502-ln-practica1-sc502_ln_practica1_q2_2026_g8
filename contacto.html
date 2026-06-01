@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Academia Excelencia</title>
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <nav class="navbar">
+            <h2 class="logo">Academia Excelencia</h2>
+
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="profesores.html">Profesores</a></li>
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-contacto">
+            <h1>Contáctanos</h1>
+            <p>
+                En Academia Excelencia estamos listos para ayudarte a resolver tus dudas
+                sobre cursos, horarios, matrícula y programas de formación.
+            </p>
+        </section>
+
+        <section class="contenido-contacto">
+            <div class="formulario">
+                <h2>Envíanos un mensaje</h2>
+
+                <form>
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo">
+
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="8888-8888">
+
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" name="asunto" placeholder="Motivo del mensaje">
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escriba su mensaje aquí"></textarea>
+
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+            </div>
+
+            <div class="informacion">
+                <h2>Información de contacto</h2>
+
+                <p><strong>Dirección:</strong> San José, Costa Rica, Avenida Central.</p>
+                <p><strong>Teléfono:</strong> +506 2222-4545</p>
+                <p><strong>Correo:</strong> info@academiaexcelencia.com</p>
+                <p><strong>Horario:</strong> Lunes a viernes de 8:00 a.m. a 6:00 p.m.</p>
+            </div>
+        </section>
+
+        <section class="mapa">
+            <h2>Ubicación</h2>
+
+            <iframe
+                src="https://www.google.com/maps?q=San%20Jose%20Costa%20Rica&output=embed"
+                loading="lazy">
+            </iframe>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Academia Excelencia</p>
+        <p>Facebook | Instagram | TikTok</p>
+        <p>Desarrollado por Grupo 8 - Ambiente Web Cliente Servidor</p>
+    </footer>
+
+</body>
+</html>
