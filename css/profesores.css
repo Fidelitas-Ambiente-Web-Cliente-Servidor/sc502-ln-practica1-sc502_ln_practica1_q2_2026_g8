@@ -1,16 +1,101 @@
-çbody{
+body {
+    margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #222222;
 }
 
-.card{
-    margin-bottom: 20px;
-}
-
-.card img{
-    height: 250px;
-    object-fit: cover;
-}
-
-h1,h2{
+.encabezado {
+    background-color: #0033a0;
+    color: white;
+    padding: 20px;
     text-align: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu .activo {
+    color: #ffcc00;
+}
+
+.hero-profesores {
+    background-color: #f2f6ff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-profesores h1 {
+    color: #0033a0;
+}
+
+.profesores-grid {
+    width: 90%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.profesor-card {
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+}
+
+.profesor-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.profesor-card h3 {
+    color: #0033a0;
+}
+
+.info-academia {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.info-academia h2 {
+    color: #0033a0;
+    border-bottom: 3px solid #ffcc00;
+    padding-bottom: 10px;
+}
+
+.footer {
+    background-color: #0033a0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .menu li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero-profesores {
+        padding: 25px 15px;
+    }
 }
