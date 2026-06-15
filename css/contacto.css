@@ -122,3 +122,15 @@ button:hover {
         padding: 25px 15px;
     }
 } 
+
+span {
+    color: red;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#mensajeExito {
+    color: green;
+    font-weight: bold;
+    margin-top: 15px;
+}
