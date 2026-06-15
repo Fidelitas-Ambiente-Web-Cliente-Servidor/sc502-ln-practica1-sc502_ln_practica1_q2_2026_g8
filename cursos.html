@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -32,85 +31,30 @@
         </p>
     </section>
 
-    <section class="busqueda">
-        <input type="text" placeholder="Buscar curso...">
-    </section>
+<section class="busqueda">
 
-    <section class="categoria">
-        <h2>Desarrollo Web</h2>
+    <input 
+    type="text" 
+    id="buscador"
+    placeholder="Buscar curso...">
 
-        <div class="cursos-grid">
+    <select id="filtroCategoria">
+        <option value="Todos">Todos</option>
+        <option value="Desarrollo Web">Desarrollo Web</option>
+        <option value="Bases de Datos">Bases de Datos</option>
+    </select>
 
-            <div class="curso-card">
-                <h3>HTML y CSS</h3>
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600" alt="HTML y CSS">
-                <p><strong>Categoría:</strong> Desarrollo Web</p>
-                <p>Aprenda a crear páginas web modernas y responsivas.</p>
-                <p><strong>Duración:</strong> 8 semanas</p>
-                <p><strong>Precio:</strong> ₡95.000</p>
-                <button>Ver más</button>
-            </div>
+</section>
 
-            <div class="curso-card">
-                <h3>JavaScript</h3>
-                <img src="https://www.infoworld.com/wp-content/uploads/2025/09/2263137-0-59682900-1757000713-shutterstock_1361674454-100939444-orig.jpg?quality=50&strip=all" alt="Curso JavaScript">
-                <p><strong>Categoría:</strong> Desarrollo Web</p>
-                <p>Desarrolle sitios web dinámicos e interactivos.</p>
-                <p><strong>Duración:</strong> 10 semanas</p>
-                <p><strong>Precio:</strong> ₡110.000</p>
-                <button>Ver más</button>
-            </div>
+    <<section class="categoria">
 
-            <div class="curso-card">
-                <h3>Desarrollo Frontend</h3>
-                <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=600" alt="Desarrollo Frontend">
-                <p><strong>Categoría:</strong> Desarrollo Web</p>
-                <p>Construya interfaces modernas para aplicaciones web.</p>
-                <p><strong>Duración:</strong> 12 semanas</p>
-                <p><strong>Precio:</strong> ₡125.000</p>
-                <button>Ver más</button>
-            </div>
+    <h2>Catálogo de Cursos</h2>
 
-        </div>
-    </section>
+    <div class="cursos-grid" id="listaCursos">
 
-    <section class="categoria">
-        <h2>Bases de Datos</h2>
+    </div>
 
-        <div class="cursos-grid">
-
-            <div class="curso-card">
-                <h3>SQL Básico</h3>
-                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600" alt="Curso SQL Básico">
-                <p><strong>Categoría:</strong> Bases de Datos</p>
-                <p>Aprenda consultas y administración de información.</p>
-                <p><strong>Duración:</strong> 6 semanas</p>
-                <p><strong>Precio:</strong> ₡80.000</p>
-                <button>Ver más</button>
-            </div>
-
-            <div class="curso-card">
-                <h3>MySQL Avanzado</h3>
-                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600" alt="MySQL Avanzado">
-                <p><strong>Categoría:</strong> Bases de Datos</p>
-                <p>Optimice y administre bases de datos empresariales.</p>
-                <p><strong>Duración:</strong> 10 semanas</p>
-                <p><strong>Precio:</strong> ₡120.000</p>
-                <button>Ver más</button>
-            </div>
-
-            <div class="curso-card">
-                <h3>Administración de Bases de Datos</h3>
-                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600" alt="Administración de Bases de Datos">
-                <p><strong>Categoría:</strong> Bases de Datos</p>
-                <p>Gestione entornos de bases de datos profesionales.</p>
-                <p><strong>Duración:</strong> 14 semanas</p>
-                <p><strong>Precio:</strong> ₡145.000</p>
-                <button>Ver más</button>
-            </div>
-
-        </div>
-    </section>
+</section>
 
 </main>
 
@@ -119,7 +63,7 @@
     <p>Facebook | Instagram | TikTok</p>
     <p>Desarrollado por Grupo 8 - Ambiente Web Cliente Servidor</p>
 </footer>
-
+<script src="js/cursos.js"></script>
 </body>
 </html>
 ```
