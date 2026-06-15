@@ -34,24 +34,36 @@
             <div class="formulario">
                 <h2>Envíanos un mensaje</h2>
 
-                <form>
+                <form id="formularioContacto">
+
                     <label for="nombre">Nombre completo</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo">
+                    <span id="errorNombre"></span>
 
                     <label for="correo">Correo electrónico</label>
                     <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
+                    <span id="errorCorreo"></span>
 
                     <label for="telefono">Teléfono</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="8888-8888">
+                    <input type="tel" id="telefono" name="telefono" placeholder="88888888">
+                    <span id="errorTelefono"></span>
 
                     <label for="asunto">Asunto</label>
                     <input type="text" id="asunto" name="asunto" placeholder="Motivo del mensaje">
+                    <span id="errorAsunto"></span>
 
                     <label for="mensaje">Mensaje</label>
                     <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escriba su mensaje aquí"></textarea>
+                    <span id="errorMensaje"></span>
 
-                    <button type="submit">Enviar mensaje</button>
+                    <button type="submit" id="btnEnviar" disabled>
+                        Enviar mensaje
+                    </button>
+
                 </form>
+
+                <div id="mensajeExito"></div>
+
             </div>
 
             <div class="informacion">
@@ -79,6 +91,8 @@
         <p>Facebook | Instagram | TikTok</p>
         <p>Desarrollado por Grupo 8 - Ambiente Web Cliente Servidor</p>
     </footer>
+
+    <script src="js/contacto.js"></script>
 
 </body>
 </html>
