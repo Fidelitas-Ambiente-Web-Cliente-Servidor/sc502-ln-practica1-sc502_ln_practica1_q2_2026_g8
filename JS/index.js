@@ -1,25 +1,25 @@
-const cursos = {
-    nombre: "HTML, CSS",
-    descripcion: "Aprende a crear páginas web modernas y responsivas con HTML y CSS",
-    imagen: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600",
-    categoria: "Desarrollo Web",
-},
+const cursos = [
+    {
+        nombre: "HTML, CSS",
+        descripcion: "Aprende a crear páginas web modernas y responsivas con HTML y CSS",
+        imagen: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600",
+        categoria: "Desarrollo Web"
+    },
+    {
+        nombre: "JavaScript",
+        descripcion: "Domina el lenguaje de programación más popular para desarrollo web",
+        imagen: "https://images.unsplash.com/photo-1505682634904-d7c0e1b8b9e5?w=600",
+        categoria: "Desarrollo Web"
+    }
+    ,
+    {
+        nombre: "Desarrollo frontend",
+        descripcion: "Aprende a crear interfaces de usuario atractivas y funcionales",
+        imagen: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=600",
+        categoria: "Frontend"   
 
-  {
-    nombre: "JavaScript",
-    descripcion: "Domina el lenguaje de programación más popular para llevar tu ingenio a otro nivel",
-    imagen: "https://www.infoworld.com/wp-content/uploads/2025/09/2263137-0-59682900-1757000713-shutterstock_1361674454-100939444-orig.jpg?quality=50&strip=all",
-    categoria: "Programación"
-  },
-
-  {
-    nombre: "Desarrollo Frontend",
-    descripcion: "Aprende a crear interfaces de usuario atractivas y funcionales",
-    imagen: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=600",
-    categoria: "Frontend"
-  },
-
-};
+    },
+];
 
 document.addEventListener("DOMContentLoaded", () => { {
     const contenedor = document.getElementById("cursos-grid");
