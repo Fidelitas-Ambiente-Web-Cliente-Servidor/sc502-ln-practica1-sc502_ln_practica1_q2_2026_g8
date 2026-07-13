@@ -3,7 +3,9 @@
 $controller = $_GET['controller'] ?? 'index';
 $action = $_GET['action'] ?? 'index';
 
+
 switch ($controller) {
+
 
     case 'index':
 
@@ -13,6 +15,8 @@ switch ($controller) {
 
         break;
 
+
+
     case 'cursos':
 
         require_once __DIR__ . '/controllers/CursosController.php';
@@ -20,6 +24,8 @@ switch ($controller) {
         $controllerObject = new CursosController();
 
         break;
+
+
 
     case 'profesores':
 
@@ -29,6 +35,8 @@ switch ($controller) {
 
         break;
 
+
+
     case 'contacto':
 
         require_once __DIR__ . '/controllers/ContactoController.php';
@@ -37,13 +45,30 @@ switch ($controller) {
 
         break;
 
+
+
     default:
 
         die('Controlador no encontrado.');
+
 }
+
+
 
 if (!method_exists($controllerObject, $action)) {
+
     die('Acción no encontrada.');
+
 }
 
-$controllerObject->$action();
+
+
+if (isset($_GET['id'])) {
+
+    $controllerObject->$action($_GET['id']);
+
+} else {
+
+    $controllerObject->$action();
+
+}

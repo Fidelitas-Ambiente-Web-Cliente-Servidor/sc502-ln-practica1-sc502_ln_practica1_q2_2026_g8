@@ -107,3 +107,66 @@ CREATE TABLE contactos (
     fecha DATETIME DEFAULT CURRENT_TIMESTAMP
 
 );
+
+
+
+CREATE TABLE profesores (
+
+    id INT AUTO_INCREMENT PRIMARY KEY,
+
+    nombre VARCHAR(100) NOT NULL,
+
+    especialidad VARCHAR(100) NOT NULL,
+
+    bio TEXT NOT NULL,
+
+    foto VARCHAR(255) NOT NULL,
+
+    activo BOOLEAN DEFAULT TRUE
+
+);
+
+
+INSERT INTO profesores
+(nombre, especialidad, bio, foto, activo)
+VALUES
+
+(
+'Carlos Ramírez',
+'Desarrollo Web',
+'Especialista en desarrollo frontend y backend con experiencia en aplicaciones web.',
+'profesor-carlos.jpg',
+1
+),
+
+(
+'Ana López',
+'Bases de Datos',
+'Profesional en diseño, administración y optimización de bases de datos.',
+'profesora-ana.jpg',
+1
+),
+
+(
+'Luis Vargas',
+'Redes y Seguridad',
+'Instructor especializado en redes, servidores y seguridad informática.',
+'profesor-luis.jpg',
+1
+),
+
+(
+'María Rodríguez',
+'Programación',
+'Docente enfocada en programación orientada a objetos y buenas prácticas.',
+'profesora-maria.jpg',
+1
+),
+
+(
+'Pedro Morales',
+'Inteligencia Artificial',
+'Investigador en soluciones de inteligencia artificial aplicada.',
+'profesor-pedro.jpg',
+1
+);

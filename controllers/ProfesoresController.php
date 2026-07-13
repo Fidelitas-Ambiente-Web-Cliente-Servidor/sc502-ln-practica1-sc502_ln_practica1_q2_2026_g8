@@ -1,14 +1,49 @@
 <?php
 
+require_once __DIR__ . '/../models/ProfesorModel.php';
+
+
+
 class ProfesoresController
 {
-    public function index()
+
+    private $model;
+
+
+
+    public function __construct()
     {
-        require_once 'views/profesores/index.php';
+
+        $this->model = new ProfesorModel();
+
     }
 
-    public function show()
+
+
+
+    public function index()
     {
-        require_once 'views/profesores/show.php';
+
+        $profesores = $this->model->getAll();
+
+
+        require_once __DIR__ . '/../views/profesores/index.php';
+
     }
+
+
+
+
+
+    public function show($id)
+    {
+
+        $profesor = $this->model->getById($id);
+
+
+        require_once __DIR__ . '/../views/profesores/show.php';
+
+    }
+
+
 }
